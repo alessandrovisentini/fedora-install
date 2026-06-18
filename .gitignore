@@ -1,0 +1,16 @@
+# Secrets and sensitive files
+secrets/
+*.key
+*.pem
+*.crt
+*.enc
+*.gpg
+*.asc
+
+# Editor / OS cruft
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+.DS_Store

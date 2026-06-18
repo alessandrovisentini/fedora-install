@@ -1,0 +1,188 @@
+{
+  "version": "3.0",
+  "repository": {
+    "url": "https://github.com/alessandrovisentini/fedora-install.git",
+    "target_dir": "$HOME/Development/repos/fedora-install"
+  },
+  "dotfiles": {
+    "url": "https://github.com/alessandrovisentini/dotfiles.git",
+    "target_dir": "$HOME/Development/repos/dotfiles"
+  },
+  "os": {
+    "fedora": {
+      "config_symlinks": [
+        "alacritty",
+        "git",
+        "glow",
+        "lazygit",
+        "nvim",
+        "rofi",
+        "shell",
+        "sway",
+        "swaync",
+        "tmux",
+        "waybar",
+        "wm-scripts"
+      ],
+      "packages": {
+        "dnf": {
+          "rpm_repos": [
+            "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm",
+            "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+          ],
+          "copr": [
+            "atim/lazygit"
+          ],
+          "packages": [
+            "git-delta",
+            "python3",
+            "geary",
+            "deja-dup",
+            "gnome-calendar",
+            "telegram-desktop",
+            "pdftk-java",
+            "libreoffice",
+            "f3d",
+            "imv",
+            "gnome-disk-utility",
+            "yt-dlp",
+            "vlc",
+            "calibre",
+            "gimp",
+            "inkscape",
+            "easyeffects",
+            "qpwgraph",
+            "mscore",
+            "audacity",
+            "pdfarranger",
+            "firefox",
+            "gnome-keyring",
+            "seahorse",
+            "nano",
+            "wget",
+            "htop",
+            "fastfetch",
+            "wl-clipboard",
+            "wl-screenrec",
+            "gcc",
+            "make",
+            "cargo",
+            "golang",
+            "bind-utils",
+            "traceroute",
+            "ripgrep",
+            "fzf",
+            "unzip",
+            "tmux",
+            "neovim",
+            "tcpdump",
+            "fwupd",
+            "git",
+            "git-lfs",
+            "nodejs",
+            "npm",
+            "docker-compose",
+            "glow",
+            "jq",
+            "moby-engine",
+            "android-tools",
+            "lazygit",
+            "steam",
+            "cups",
+            "hplip",
+            "avahi",
+            "system-config-printer",
+            "alacritty",
+            "playerctl",
+            "pulseaudio-utils",
+            "adwaita-icon-theme",
+            "gnome-themes-extra",
+            "adwaita-qt5",
+            "adwaita-qt6",
+            "baobab",
+            "gnome-calculator",
+            "thunar",
+            "thunar-archive-plugin",
+            "thunar-volman",
+            "thunar-media-tags-plugin",
+            "tumbler",
+            "papers",
+            "simple-scan",
+            "deluge-gtk",
+            "polkit",
+            "pipewire",
+            "pipewire-pulseaudio",
+            "pipewire-alsa",
+            "pipewire-jack-audio-connection-kit",
+            "wireplumber",
+            "bluez",
+            "gvfs",
+            "gsettings-desktop-schemas",
+            "NetworkManager-openvpn-gnome",
+            "upower",
+            "bolt",
+            "fprintd",
+            "fprintd-pam",
+            "tlp",
+            "intel-media-driver",
+            "sway",
+            "gtklock",
+            "swayidle",
+            "rofi-wayland",
+            "waybar",
+            "SwayNotificationCenter",
+            "libnotify",
+            "brightnessctl",
+            "network-manager-applet",
+            "pwvucontrol",
+            "grim",
+            "slurp",
+            "ImageMagick",
+            "blueman",
+            "grimshot",
+            "wl-mirror",
+            "lisgd",
+            "wtype",
+            "squeekboard",
+            "iio-sensor-proxy"
+          ]
+        },
+        "flatpak": {
+          "remotes": [
+            {
+              "name": "flathub",
+              "url": "https://flathub.org/repo/flathub.flatpakrepo"
+            }
+          ],
+          "packages": [
+            "com.spotify.Client",
+            "com.discordapp.Discord",
+            "md.obsidian.Obsidian",
+            "org.localsend.localsend_app",
+            "com.vscodium.codium",
+            "io.github.ungoogled_software.ungoogled_chromium",
+            "me.proton.Pass",
+            "org.torproject.torbrowser-launcher"
+          ],
+          "overrides": [
+            {
+              "app": "com.discordapp.Discord",
+              "args": ["--socket=wayland", "--env=ELECTRON_OZONE_PLATFORM_HINT=auto"]
+            }
+          ]
+        },
+        "npm_global": [
+          "@anthropic-ai/claude-code",
+          "markdownlint-cli"
+        ],
+        "pip_user": [
+          "spotdl",
+          "rofimoji"
+        ]
+      },
+      "post_install": [
+        "$HOME/Development/repos/fedora-install/install/install-fedora-nerd-font.sh"
+      ]
+    }
+  }
+}
