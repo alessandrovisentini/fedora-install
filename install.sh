@@ -44,5 +44,5 @@ else
     }
 fi
 
-chmod +x "$TARGET_DIR/install/install.sh" "$TARGET_DIR/install/install-fedora-nerd-font.sh"
+chmod +x "$TARGET_DIR/install/install.sh" "$TARGET_DIR/install/install-fedora-nerd-font.sh" "$TARGET_DIR/install/install-auto-cpufreq.sh"
 exec "$TARGET_DIR/install/install.sh" "$@"
