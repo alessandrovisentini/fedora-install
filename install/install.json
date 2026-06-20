@@ -22,7 +22,6 @@
         "swaylock",
         "swaync",
         "tmux",
-        "waybar",
         "wm-scripts"
       ],
       "packages": {
