@@ -22,6 +22,7 @@
         "swaylock",
         "swaync",
         "tmux",
+        "waybar",
         "wm-scripts"
       ],
       "packages": {
@@ -90,6 +91,8 @@
             "intel-media-driver",
             "swaylock",
             "SwayNotificationCenter",
+            "waybar",
+            "blueman",
             "pwvucontrol",
             "ImageMagick",
             "wl-mirror",
